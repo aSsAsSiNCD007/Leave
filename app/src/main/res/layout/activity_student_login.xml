@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+tools:context="com.example.ben0.leavemanagementsystem.StudentLogin">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="90dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:paddingLeft="-100dp"
+        android:src="@drawable/ilahia"
+        android:layout_weight="0.37"
+        android:id="@+id/ilLogo"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT"
+        android:textSize="18dp"
+        android:textColor="#000000" />
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/admisn_shape_pink"
+        android:inputType="text"
+        android:hint="X/9999/15"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:drawableLeft="@drawable/ic_account_circle_pink_24dp"
+        android:drawablePadding="10dp"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/admisn_shape_pink"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#808080"
+        android:drawableLeft="@drawable/ic_lock_pink_24dp"
+        android:drawablePadding="10dp"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/round_btn_pink"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:onClick="loggedin"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:text="New User?"
+        android:textColor="#808080"
+        android:textSize="20dp"/>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/round_btn"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:onClick="signUp"/>
+
+</LinearLayout>
+
+</LinearLayout>
+

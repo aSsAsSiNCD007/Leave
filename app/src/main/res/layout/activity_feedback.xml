@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="61dp"
+    tools:context="com.example.ben0.leavemanagementsystem.Feedback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textSize="26dp"
+        android:textColor="#5b39c6"
+        android:text="FeedBack Form"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="Subject"
+                android:background="@drawable/dashline"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="left"
+                android:padding="15dp"
+                android:gravity="left"
+                android:hint="Subject"
+                android:background="@drawable/dashline"/>
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btn_go"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/round_btn_pink"
+
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:onClick="loggedin"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.ben0.leavemanagementsystem.StudentSignup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="95dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="REGISTRATION"
+            android:textColor="#5b39c6"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="60dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admission Number : "
+            android:textColor="#000000"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/signUpId"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:background="@drawable/admisn_shape"
+        android:textColor="#000000"
+        android:inputType=""
+        />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Department : "
+            android:textColor="#000000"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Spinner
+            android:id="@+id/signUpDept"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/spinner_shape"
+            android:spinnerMode="dropdown"
+
+            />
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Tutor : "
+            android:textColor="#000000"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Spinner
+            android:id="@+id/signUpTutor"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/spinner_shape"
+            android:spinnerMode="dropdown"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Staff Id: "
+            android:textColor="#000000"/>
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:id="@+id/staffid"
+            android:background="@drawable/admisn_shape"
+            android:textColor="#000000"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/signUpPass"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:hint="Password"
+            android:textColorHint="#808080"
+            android:gravity="center"
+            android:background="@drawable/admisn_shape"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/signUpConfirm"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:hint="Confirm Password"
+            android:textColorHint="#808080"
+            android:gravity="center"
+            android:background="@drawable/admisn_shape"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:orientation="vertical">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn_pink"
+            android:text="Register"
+            android:onClick="Register"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

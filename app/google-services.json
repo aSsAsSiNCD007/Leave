@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "197188206062",
+    "firebase_url": "https://leavemanagementsystem-94207.firebaseio.com",
+    "project_id": "leavemanagementsystem-94207",
+    "storage_bucket": "leavemanagementsystem-94207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197188206062:android:eb28aa624cbd617d",
+        "android_client_info": {
+          "package_name": "com.example.althaf.leavemanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197188206062-g5g2257svovvt3nbtrkv25u5j7b680nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.althaf.leavemanagementsystem",
+            "certificate_hash": "ed7f8152415ea14b347779e5c6b1f4e83cb0ade5"
+          }
+        },
+        {
+          "client_id": "197188206062-9848eercln6968j24v0qluhghnp21unj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-QWmYXvj54_Jh1fyE1gP61VB1kRDGCE0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197188206062-9848eercln6968j24v0qluhghnp21unj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

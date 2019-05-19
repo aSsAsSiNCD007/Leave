@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="40dp"
+    tools:context="com.example.ben0.leavemanagementsystem.LeaveApply">
+
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="26dp"
+            android:textColor="#5b39c6"
+            android:text="Leave Application Form"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Date : "/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <EditText
+            android:id="@+id/fromDate"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/dashline"
+            android:padding="10dp"
+            android:clickable="true"
+            android:inputType="date"
+            android:focusable="false"
+            android:hint="From"
+            android:onClick="popfrom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  to  "/>
+
+        <EditText
+            android:id="@+id/toDate"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:inputType="date"
+            android:clickable="true"
+            android:focusable="false"
+            android:background="@drawable/dashline"
+            android:hint="to"
+            android:onClick="popto"/>
+
+
+    </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Days"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <EditText
+            android:id="@+id/noDays"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:background="@drawable/dashline"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:hint="days"/>
+
+
+
+
+    </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Reason "/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:background="@drawable/dashline"
+            android:padding="10dp"
+            android:hint="Subject"/>
+
+
+
+
+    </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="290dp"
+                    android:layout_height="250dp"
+                    android:background="@drawable/dashline"
+                    android:gravity="left"
+                    android:hint="Description"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="-30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_btn_pink"
+                    android:text="Submit"
+                    android:onClick="submit"/>
+
+            </LinearLayout>
+
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

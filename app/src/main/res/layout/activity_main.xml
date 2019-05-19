@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="18dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+tools:context="com.example.ben0.leavemanagementsystem.MainActivity">
+
+<ImageView
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="22dp"
+    android:src="@drawable/icet"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="69dp"
+        android:paddingTop="00dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id_go"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/admisn_shape"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="R/6928/15"
+            android:textColor="#000000"
+            android:textColorHint="#D3D3D3" />
+
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/round_btn"
+            android:text="let's go!"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_gravity="center"
+            android:paddingLeft="90dp"
+            android:textColor="#000000"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+
+        <Button
+            android:id="@+id/btnBarcode"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_btn"
+            android:textSize="17dp"
+            android:text="Scan Barcode"
+            android:textColor="#FFFFFF"
+            android:onClick="barCode"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
